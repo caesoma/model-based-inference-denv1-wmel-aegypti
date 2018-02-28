@@ -1,3 +1,0 @@
-#!/bin/bash
-
-cat DENV1_TM_RPS.csv
