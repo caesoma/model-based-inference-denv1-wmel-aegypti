@@ -1,0 +1,65 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              log_titer   R-squared:                       0.550
+Model:                            OLS   Adj. R-squared:                  0.447
+Method:                 Least Squares   F-statistic:                     5.351
+Date:                Tue, 12 May 2026   Prob (F-statistic):           7.02e-09
+Time:                        23:15:43   Log-Likelihood:                -299.42
+No. Observations:                 114   AIC:                             642.8
+Df Residuals:                      92   BIC:                             703.0
+Df Model:                          21                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================================
+                                                 coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+Intercept                                      4.1417      2.084      1.987      0.050       0.003       8.281
+C(group)[T.wMEL]                              -0.8095      3.049     -0.266      0.791      -6.865       5.246
+C(dose)[T.5]                                  -0.5148      2.633     -0.196      0.845      -5.744       4.715
+C(dose)[T.6]                                  -1.3132      2.725     -0.482      0.631      -6.725       4.098
+C(dose)[T.7]                                  -1.2654      2.580     -0.491      0.625      -6.389       3.858
+C(dose)[T.8]                                   8.8653      2.162      4.101      0.000       4.572      13.159
+C(time)[T.3]                                   0.0630      2.882      0.022      0.983      -5.661       5.787
+C(time)[T.7]                                   0.3114      1.407      0.221      0.825      -2.483       3.105
+C(group)[T.wMEL]:C(dose)[T.5]                 -0.5148      2.633     -0.196      0.845      -5.744       4.715
+C(group)[T.wMEL]:C(dose)[T.6]                  0.6800      3.588      0.190      0.850      -6.445       7.805
+C(group)[T.wMEL]:C(dose)[T.7]                  3.6357      3.590      1.013      0.314      -3.494      10.765
+C(group)[T.wMEL]:C(dose)[T.8]                 -0.6407      3.218     -0.199      0.843      -7.032       5.751
+C(group)[T.wMEL]:C(time)[T.3]                 -0.7144      1.647     -0.434      0.665      -3.986       2.557
+C(group)[T.wMEL]:C(time)[T.7]                 -2.1769      1.625     -1.339      0.184      -5.405       1.051
+C(dose)[T.5]:C(time)[T.3]                      0.7635      2.601      0.294      0.770      -4.403       5.930
+C(dose)[T.6]:C(time)[T.3]                      0.8461      3.980      0.213      0.832      -7.059       8.751
+C(dose)[T.7]:C(time)[T.3]                      1.6440      3.456      0.476      0.635      -5.220       8.508
+C(dose)[T.8]:C(time)[T.3]                     -5.5303      3.186     -1.736      0.086     -11.859       0.798
+C(dose)[T.5]:C(time)[T.7]                      0.8212      2.156      0.381      0.704      -3.461       5.103
+C(dose)[T.6]:C(time)[T.7]                     -0.4319      2.469     -0.175      0.862      -5.336       4.472
+C(dose)[T.7]:C(time)[T.7]                      1.8979      2.230      0.851      0.397      -2.532       6.328
+C(dose)[T.8]:C(time)[T.7]                     -1.9757      1.730     -1.142      0.256      -5.412       1.461
+C(group)[T.wMEL]:C(dose)[T.5]:C(time)[T.3]     0.7635      2.601      0.294      0.770      -4.403       5.930
+C(group)[T.wMEL]:C(dose)[T.6]:C(time)[T.3]     1.0174      2.909      0.350      0.727      -4.761       6.796
+C(group)[T.wMEL]:C(dose)[T.7]:C(time)[T.3]    -2.1784      3.012     -0.723      0.471      -8.160       3.803
+C(group)[T.wMEL]:C(dose)[T.8]:C(time)[T.3]    -0.3169      2.237     -0.142      0.888      -4.759       4.125
+C(group)[T.wMEL]:C(dose)[T.5]:C(time)[T.7]     0.8212      2.156      0.381      0.704      -3.461       5.103
+C(group)[T.wMEL]:C(dose)[T.6]:C(time)[T.7]     1.3901      3.004      0.463      0.645      -4.575       7.355
+C(group)[T.wMEL]:C(dose)[T.7]:C(time)[T.7]    -4.4767      2.810     -1.593      0.115     -10.057       1.104
+C(group)[T.wMEL]:C(dose)[T.8]:C(time)[T.7]     0.0886      2.242      0.040      0.969      -4.363       4.540
+==============================================================================
+Omnibus:                        7.015   Durbin-Watson:                   2.225
+Prob(Omnibus):                  0.030   Jarque-Bera (JB):                9.517
+Skew:                          -0.285   Prob(JB):                      0.00858
+Kurtosis:                       4.296   Cond. No.                     2.55e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 4.16e-31. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+                                sum_sq    df             F        PR(>F)
+C(group)                  9.757403e+01   1.0  7.036872e+00  9.405239e-03
+C(dose)                   2.118199e+03   4.0  3.819022e+01  8.414071e-19
+C(time)                   1.691733e+02   2.0  6.100244e+00  3.252606e-03
+C(group):C(dose)          1.046241e+01   4.0  1.886327e-01  9.437843e-01
+C(group):C(time)         -9.228355e-13   2.0 -3.327666e-14  1.000000e+00
+C(dose):C(time)           3.542576e+02   8.0  3.193556e+00  6.818167e-03
+C(group):C(dose):C(time)  7.267003e+01   8.0  6.551047e-01  7.293525e-01
+Residual                  1.275682e+03  92.0           NaN           NaN
